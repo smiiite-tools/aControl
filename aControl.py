@@ -193,10 +193,10 @@ def family_features():
         console.print("\nIf you want to reactivate it just enable the services back again.")
 
 
-        # WpcMonSvc = "WpcMonSvc"
-        # Parental = "Parental Controls"
-        # subprocess.run(["net", "stop", WpcMonSvc], shell=True)
-        # subprocess.run(["sc", "config", Parental, "start=", "disabled"], shell=True)
+        WpcMonSvc = "WpcMonSvc"
+        Parental = "Parental Controls"
+        subprocess.run(["net", "stop", WpcMonSvc], shell=True)
+        subprocess.run(["sc", "config", Parental, "start=", "disabled"], shell=True)
 
     if choice == "Y":
         getservices()
